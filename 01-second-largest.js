@@ -7,15 +7,15 @@ class Solution {
 		let largest = 0;
 		let secondLargest = -1;
 
-		for (let i = 0; i < arr.length; i++) {
-			if (arr[i] > largest) {
-				largest = arr[i];
+		for (const element of arr) {
+			if (element > largest) {
+				largest = element;
 			}
 		}
 
-		for (let i = 0; i < arr.length; i++) {
-			if (arr[i] > secondLargest && arr[i] !== largest) {
-				secondLargest = arr[i];
+		for (const element of arr) {
+			if (element > secondLargest && element !== largest) {
+				secondLargest = element;
 			}
 		}
 		return secondLargest;
